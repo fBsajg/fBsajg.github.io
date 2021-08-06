@@ -1,0 +1,33 @@
+html, body {	
+	background-color: #e5d3d4;
+}
+
+.logo {
+	border-radius: 50%;
+	width: 180px;
+	height: auto;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	/* transform: translate(-50%, -50%); */
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
